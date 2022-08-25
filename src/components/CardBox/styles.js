@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.section`
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

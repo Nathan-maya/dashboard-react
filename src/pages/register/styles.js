@@ -28,6 +28,13 @@ export const Form = styled.form`
   border-radius: 10px;
 `;
 
+export const Title = styled.h2`
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+`;
+
 export const Label = styled.label`
   margin: 10px 0;
   font-size: 18px;

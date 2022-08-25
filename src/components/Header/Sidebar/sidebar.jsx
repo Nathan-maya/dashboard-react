@@ -9,6 +9,7 @@ import {
   FaRegCalendarAlt,
   FaChartBar,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import SidebarItem from '../SidebarItem/SidebarItem';
 
@@ -17,11 +18,14 @@ const Sidebar = ({ active }) => {
     active(false);
   };
 
+
   return (
     <Container sidebar={active}>
       <FaTimes onClick={closeSidebar} />
       <Content>
-        <SidebarItem Icon={FaHome} Text="Principal" />
+        <Link to="/">
+          <SidebarItem Icon={FaHome} Text="Principal" location="/"  />
+        </Link>
         <SidebarItem Icon={FaChartBar} Text="Estatísticas" />
         <SidebarItem Icon={FaUserAlt} Text="Usuários" />
         <SidebarItem Icon={FaEnvelope} Text="E-mail" />

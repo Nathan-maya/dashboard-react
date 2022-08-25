@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, ContainerIcon, ContainerText } from './styles';
 
-const Card = ({ number, title, Icon,key }) => {
+const Card = ({ number, title, Icon}) => {
   return (
     <Container>
       <ContainerText >

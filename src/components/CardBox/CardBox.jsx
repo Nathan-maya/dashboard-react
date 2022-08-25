@@ -8,7 +8,7 @@ const CardBox = () => {
   return (
     <CardContainer>
       {stats.map((item) => (
-        <Card number={item.number} title={item.title} Icon={AiFillEye}></Card>
+        <Card number={item.number} title={item.title} Icon={AiFillEye} key={item.id}></Card>
       ))}
     </CardContainer>
   );

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, ContainerCustomer, Customer, DetailCustomer, ImgCustomer, Title } from './Styles';
+import { Container, ContainerCustomer, Customer, DetailCustomer, ImgCustomer, Title } from './styles';
 import Perfil from '../../assets/foto-perfil.jpg'
 const Customers = () => {
-  console.log(Perfil)
   return (
     <Container>
       <Title>Clientes Recentes: </Title>
