@@ -22,18 +22,18 @@ const Order = () => {
       <Table>
         <Thead>
           <Tr>
-            <Td>Nome</Td>
-            <Td>Price</Td>
-            <Td>Payment</Td>
-            <Td>Status</Td>
+            <Td type="Nome">Nome</Td>
+            <Td type="Preco">Price</Td>
+            <Td type="Pagamento">Payment</Td>
+            <Td type="Status">Status</Td>
           </Tr>
         </Thead>
         <Tbody>
           {orders.map((order) => (
             <Tr key={order.id}>
-              <Td>{order.nome}</Td>
-              <Td>{order.preco}</Td>
-              <Td>{order.pagamento}</Td>
+              <Td >{order.nome}</Td>
+              <Td >{order.preco}</Td>
+              <Td >{order.pagamento}</Td>
               <Td>
                 <Span type={order.status}>{order.status}</Span>
               </Td>

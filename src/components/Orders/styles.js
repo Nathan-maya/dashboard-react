@@ -32,8 +32,21 @@ export const Tr = styled.tr`
 `;
 export const Td = styled.td`
   padding: 10px 5px;
-  font-weight: bold;
 
+  ${(props) => {
+    switch (props.type) {
+      case 'Nome':
+        return `font-weight:bold;`;
+      case 'Preco':
+        return `font-weight:bold;`;
+      case 'Pagamento':
+        return `font-weight:bold;`;
+      case 'Status':
+        return `font-weight:bold;`;
+      default:
+        return `font-weight:400;`;
+    }
+  }}
 `;
 export const Tbody = styled.tbody``;
 
@@ -63,4 +76,4 @@ export const Span = styled.span`
         return `background-color:#1d2433;`;
     }
   }};
-`
+`;

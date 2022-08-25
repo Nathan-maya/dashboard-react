@@ -11,9 +11,10 @@ import {
 import { FaBars } from 'react-icons/fa';
 import Sidebar from './Sidebar/sidebar';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
   return (
@@ -29,8 +30,12 @@ const Header = () => {
         </SearchContainer>
       </Center>
       <Right>
-        <MenuItem>Login</MenuItem>
-        <MenuItem>Register</MenuItem>
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/login">
+          <MenuItem>Login</MenuItem>
+        </Link>
+        <Link style={{ textDecoration: 'none', color: 'white' }} to="/register">
+          <MenuItem>Cadastrar</MenuItem>
+        </Link>
       </Right>
     </Container>
   );

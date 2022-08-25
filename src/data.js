@@ -2,7 +2,7 @@ import { AiFillEye } from 'react-icons/ai';
 export const stats = [
   {
     id: 1,
-    number: 1.2,
+    number: 1.201,
     title: 'Daily Views',
     icon: AiFillEye,
   },

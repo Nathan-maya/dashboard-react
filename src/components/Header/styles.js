@@ -8,7 +8,6 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 export const Left = styled.div`
-
   > svg {
     position: fixed;
     color: white;
@@ -22,9 +21,8 @@ export const Left = styled.div`
 export const Center = styled.div`
   display: flex;
   align-items: center;
-
 `;
-export const SearchContainer=styled.div`
+export const SearchContainer = styled.div`
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
@@ -32,14 +30,14 @@ export const SearchContainer=styled.div`
   padding: 5px;
   background-color: white;
   border-radius: 5px;
-  &:last-child{
+  &:last-child {
     cursor: pointer;
   }
-`
+`;
 export const Input = styled.input`
   border: none;
   padding: 5px;
-`
+`;
 export const Right = styled.div`
   display: flex;
   color: white;
@@ -49,8 +47,7 @@ export const Right = styled.div`
 `;
 
 export const MenuItem = styled.div`
-  cursor: pointer;
-  font-size: 14px;
-`
+    cursor: pointer;
+    font-size: 14px;
 
-
+`;
