@@ -4,6 +4,8 @@ export const Container = styled.section`
   padding: 20px;
   color: white;
   background-color: #1d2433;
+  width: 100%;
+  margin-left: 20px;
 `;
 export const OrderHeader = styled.div`
   display: flex;

@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  border: 2px solid white;
   justify-content: space-between;
   padding: 20px;
+  gap: 20px;
+  background-color: #1d2433;
 `;
 export const ContainerText = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ export const ContainerText = styled.div`
   > div:last-child {
     font-size: 16px;
     margin-top: 10px;
-    color: #878787;
+    color: #03A9F4;
   }
 `;
 export const ContainerIcon = styled.div`
@@ -23,5 +24,6 @@ export const ContainerIcon = styled.div`
     width: 48px;
     height: 48px;
     margin-left: 20px;
+    color: #03A9F4;
   }
 `;

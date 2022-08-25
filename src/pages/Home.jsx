@@ -3,8 +3,9 @@ import Header from '../components/Header/Header';
 import CardBox from '../components/CardBox/CardBox';
 import Order from '../components/Orders/Order';
 import styled from 'styled-components';
+import Customers from '../components/Customers/Customers';
 
-const Main = styled.div`
+const Main = styled.section`
   position: absolute;
   height: 110px;
   color: white;
@@ -12,13 +13,22 @@ const Main = styled.div`
   left: 300px;
 `;
 
+const Details = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+`
+
 const Home = () => {
   return (
     <div>
       <Header />
       <Main>
         <CardBox />
-        <Order />
+        <Details>
+          <Order />
+          <Customers  />
+        </Details>
       </Main>
     </div>
   );
